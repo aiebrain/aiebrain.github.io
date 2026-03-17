@@ -23,14 +23,55 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; font-size: 16px; }
     [id] { scroll-margin-top: 32px; }
 
     body {
       background: var(--bg);
       color: var(--text);
       font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
-      line-height: 1.7;
+      line-height: 1.8;
+      font-size: 1rem;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    @media (max-width: 480px) {
+      html { font-size: 15px; }
+      section { padding: 40px 0; }
+      .container { padding: 0 16px; }
+      .hero { padding: 56px 16px 48px; }
+      .hero h1 { font-size: 1.9rem; }
+      .hero p { font-size: 1rem; }
+      .section-title { font-size: 1.6rem !important; }
+      .section-tag { font-size: .8rem; }
+      .section-sub { font-size: .95rem; }
+      .compare-table th, .compare-table td { font-size: .88rem; padding: 10px 10px; }
+      .prompt-body { font-size: .95rem; }
+      .prompt-label { font-size: .85rem; }
+      .copy-btn { font-size: .82rem; padding: 6px 14px; }
+      .step-content h4 { font-size: 1rem; }
+      .step-content p { font-size: .95rem; }
+      .plan-name { font-size: 1rem; }
+      .plan-price { font-size: 1.3rem; }
+      .plan-detail { font-size: .88rem; }
+      .install-link { font-size: .95rem; padding: 13px 14px; }
+      .install-card h3 { font-size: 1.1rem; }
+      .install-card p { font-size: .92rem; }
+      .kw-tag { font-size: .88rem; padding: 5px 12px; }
+      .kw-card h4 { font-size: .88rem; }
+      .tip-box p, .tip-box li { font-size: .95rem; }
+      .info-box p, .info-box li { font-size: .95rem; }
+      .flow-item h4 { font-size: .95rem; }
+      .flow-item p { font-size: .85rem; }
+      .settings-card h4 { font-size: .95rem; }
+      .settings-card p { font-size: .88rem; }
+      .settings-card .val { font-size: 1.2rem; }
+      .yt-cta h3 { font-size: 1.2rem; }
+      .yt-cta p { font-size: .95rem; }
+      footer { font-size: .88rem; }
+      .prompt-situation { font-size: .88rem; }
+      .step { gap: 12px; padding: 16px; }
+      .step-num { width: 32px; height: 32px; font-size: .9rem; }
     }
 
     /* ── HERO ── */
